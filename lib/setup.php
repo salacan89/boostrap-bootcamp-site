@@ -16,11 +16,17 @@ function h5bs_acf_options_init()
 
 add_action('acf/init', 'h5bs_acf_options_init');
 
+// Title Tag
+
+add_theme_support('title-tag');
+
 // Image Thumbnails
 add_theme_support('post-thumbnails');
 
+
+
 // html5 support
-add_theme_support('html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script']);
+add_theme_support('html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script', 'title-tag']);
 
 // Remove junk from head
 function h5bs_remove_junk()

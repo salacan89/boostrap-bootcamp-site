@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 // https://vitejs.dev/config/
 // http://localhost:3005 is serving Vite on development but accessing it directly will be empty
 

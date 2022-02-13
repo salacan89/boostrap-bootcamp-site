@@ -17,6 +17,8 @@ get_header(); ?>
 
   <?php endwhile; endif; ?>
 
+  Hello 123
+
 </div><!-- end content -->
 
 <?php // get_sidebar(); ?>
