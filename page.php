@@ -1,26 +1,15 @@
 <?php
-/**
- * Default Page Template
- *
- */
+	/**
+	 * Default Page Template
+	 *
+	 */
 
-get_header(); ?>
+	get_header();
 
-<div class="container page-content py-4" role="main">
+	$sections = get_field('flexible_content');
 
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	load_section('partials/flexible-sections.php', ['sections' => $sections]);
 
-  <article <?php post_class( 'group' ); ?> role="article">
-    <h1><?php the_title(); ?></h1>
-    <?php the_content(); ?>
-  </article>
-
-  <?php endwhile; endif; ?>
-
-  Hello 123
-
-</div><!-- end content -->
-
-<?php // get_sidebar(); ?>
-
-<?php get_footer(); ?>
+	get_footer(); 
+?>
+ 

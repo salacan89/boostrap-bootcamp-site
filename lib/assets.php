@@ -30,7 +30,7 @@ function endsWith(string $haystack, string $needle): bool
 }
 
 function is_development(): bool
-{
+{ return true;
   if (isset($_SERVER['SERVER_NAME'])) {
     if (
       $_SERVER['SERVER_NAME'] == 'localhost'
@@ -54,7 +54,7 @@ function vite(String $entry): string
 // Helpers to print tags
 function vite_js_tag(string $entry): string
 {
-  $url = IS_DEVELOPMENT ? 'http://localhost:3005/'.$entry : vite_asset_url($entry);
+  $url = IS_DEVELOPMENT ? 'http://localhost/wordpress/'.$entry : vite_asset_url($entry);
 
   if (!$url) {
     return '';

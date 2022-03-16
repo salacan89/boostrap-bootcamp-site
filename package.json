@@ -3,8 +3,8 @@
   "private": "true",
   "version": "1.0.2",
   "scripts": {
-    "dev": "APP_ENV=development vite",
-    "build": "APP_ENV=production vite build"
+     "dev":  "SET APP_ENV=development & vite",
+    "build": "SET APP_ENV=production & vite build"
   },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^1.6.4",

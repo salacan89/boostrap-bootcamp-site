@@ -27,26 +27,18 @@
 <body <?php body_class('d-flex flex-column h-100'); ?>>
 
 <header class="site-header" role="banner">
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-              <div class="container">
-                <a href="<?php echo site_url(); ?>" class="navbar-brand">Frontend Bootcamp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" ><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navmenu">
-                       <ul class="navbar-nav  ms-auto">
-                        <li class="nav-item">
-                                <a href="#learn" class="nav-link">What you learn</a>
-                        </li>
-                        <li class="nav-item">
-                                <a href="#instructors" class="nav-link">Instructors</a>
-                        </li>
-                        <li class="nav-item">
-                                <a href="#questions" class="nav-link">Questions</a>
-                        </li>
-                       </ul>
-                </div>
-              </div>
-              
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">                    
+      <a href="<?php echo site_url(); ?>" class="navbar-brand">Frontend Bootcamp</a>                
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" ><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav  ms-auto">
+        <?php h5bs_primary_nav(); ?>                        
+        </ul>
+      </div>
+    </div>              
+  </nav>
+
   <!--Showcase-->
   <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
               <div class="container">
