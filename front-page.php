@@ -56,7 +56,7 @@ get_header();
 </section>                              
                               
 <!--Question Accordion-->
-<section class="p-5" id="questions">	
+<section class="section-wrap" id="questions">	
 	<div class="container">
 		<h2 class="text-center mb-4">FAQ</h2>
 		<div class="accordion accordion-flush" id="questions">
@@ -149,74 +149,6 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section class="section-wrap" id="pricing">
-	<div class="container">
-		<div class="pricing-header text-center p-3 pb-md-4 mx-auto">
-			<h1 class="display-4 fw-bold">Pricing</h1>
-			<p class="fs-3 mb-3 text-muted">Quickly build an effective pricing table for your 				potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
-		</div>
-		<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-			<div class="col">
-				<div class="card">
-					<div class="card-header py-3">
-						<h4>Free</h4>
-					</div>
-					<div class="card-body">
-						<h2 class="card-title pricing-card-title">$0
-							<small class="text-muted fw-light">/mo</small>
-						</h2>
-						<ul class="list-unstyled mt-3">
-							<li>10 users included</li>
-							<li>2 GB of storage</li>
-							<li>Email support</li>
-							<li>Help center access</li>
-						</ul>
-						<button type="button" class="btn btn-outline-primary w-100 pt-3 pb-4">Sign up for free</button>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card">
-					<div class="card-header py-3">
-						<h4>Pro</h4>
-					</div>
-					<div class="card-body">
-						<h2 class="card-title pricing-card-title">$15
-							<small class="text-muted fw-light">/mo</small>
-						</h2>
-						<ul class="list-unstyled mt-3">
-							<li>20 users included</li>
-							<li>10 GB of storage</li>
-							<li>Priority email support</li>
-							<li>Help center access</li>
-						</ul>
-						<button type="button" class="btn btn-primary w-100 pt-3 pb-4">Get started</button>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card">
-					<div class="card-header bg-primary text-white border-primary py-3">
-						<h4>Enterprise</h4>
-					</div>
-					<div class="card-body">
-						<h2 class="card-title pricing-card-title">$29
-							<small class="text-muted fw-light">/mo</small>
-						</h2>
-						<ul class="list-unstyled mt-3">
-							<li>30 users included</li>
-							<li>15 GB of storage</li>
-							<li>Phone and email support</li>
-							<li>Help center access</li>
-						</ul>
-						<button type="button" class="btn btn-primary w-100 pt-3 pb-4">Get started</button>
-					</div>
-				</div>
-			</div>
-  	</div>
 	</div>
 </section>
 

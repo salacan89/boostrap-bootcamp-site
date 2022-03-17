@@ -22,7 +22,7 @@ export default defineConfig({
     liveReload([`${dir}/*.php`, `${dir}/(lib|partials)/**/*.php`]),
   ],
   root: 'src',
-  base: `/src`,
+  base: '/wp-content/themes/html5-blank-slate/src/',
   // base: process.env.APP_ENV === 'development' ? `/src` : `wp-content/themes/html5-blank-slate/dist`,
   // base: process.env.APP_ENV === 'development' ? `${themePath}/src` : `${themePath}/dist`,
   resolve: {

@@ -43,6 +43,12 @@
 						case 'embed' :
 							load_section('sections/embed.php', $section);  
 						break;
+						case 'pricing' :
+							load_section('sections/pricing.php', $section);  
+						break;
+						case 'slideshow' :
+							load_section('sections/slideshow.php', $section);  
+						break;
 					}                    
 			}
 		}

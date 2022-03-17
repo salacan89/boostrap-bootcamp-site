@@ -9,6 +9,7 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
      
         
         
@@ -20,6 +21,7 @@
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <?= vite('main.js') ?>
+  
 
   <?php wp_head(); ?>
 </head>
