@@ -34,6 +34,15 @@
 						case 'carousel' :
 							load_section('sections/carousel.php', $section);  
 						break;
+						case 'collapse' :
+							load_section('sections/collapse.php', $section);  
+						break;
+						case 'dropdown' :
+							load_section('sections/dropdown.php', $section);  
+						break;
+						case 'embed' :
+							load_section('sections/embed.php', $section);  
+						break;
 					}                    
 			}
 		}

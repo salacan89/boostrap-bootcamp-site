@@ -6,27 +6,33 @@ import { defineConfig } from 'vite'
 import legacy from '@vitejs/plugin-legacy'
 import liveReload from 'vite-plugin-live-reload'
 
-const { resolve } = require('path')
+const { resolve, normalize } = require('path')
 
-const themePath = __dirname.substring(__dirname.lastIndexOf('/wp-content/'))
+const dir = normalize(__dirname)
+const themePath = dir.substring(dir.lastIndexOf('/wp-content/'))
+// const themePath = normalize(resolve().substring(resolve().lastIndexOf('/wp-content')))
+console.log(`aaaa: ${themePath}`)
+console.log(`dir: ${dir}`)
 
 export default defineConfig({
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11'],
     }),
-    liveReload([`${__dirname}/*.php`, `${__dirname}/(lib|partials)/**/*.php`]),
+    liveReload([`${dir}/*.php`, `${dir}/(lib|partials)/**/*.php`]),
   ],
   root: 'src',
-  base: process.env.APP_ENV === 'development' ? `${themePath}/src` : `${themePath}/dist`,
+  base: `/src`,
+  // base: process.env.APP_ENV === 'development' ? `/src` : `wp-content/themes/html5-blank-slate/dist`,
+  // base: process.env.APP_ENV === 'development' ? `${themePath}/src` : `${themePath}/dist`,
   resolve: {
     alias: {
-      '@images': resolve(__dirname, './src/assets/images'),
+      '@images': resolve(dir, './src/assets/images'),
     },
   },
   build: {
     // output dir for production build
-    outDir: resolve(__dirname, './dist'),
+    outDir: resolve(dir, './dist'),
     emptyOutDir: true,
 
     // emit manifest so PHP can find the hashed files
