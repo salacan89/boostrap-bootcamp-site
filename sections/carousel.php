@@ -19,10 +19,10 @@
         <?php
         $key = 0;
         foreach($images as $key=>$image) { ?>
-        <div class="carousel-item <?php if($key==0){echo "active";}
-          else{echo " ";} ?>">                                                      
-				  <img src="<?= $image['url']; ?>" class="d-block w-100" alt="">
-			  </div> 
+					<div class="carousel-item <?php if($key==0){echo "active";}
+						else{echo " ";} ?>">                                                      
+						<img src="<?= $image['url']; ?>" class="d-block w-100" alt="">
+					</div> 
         <?php  } ?>  			
 		  </div>         			     
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -5,7 +5,7 @@
 
 ?>
 <?php if($show_section) { ?>
-  <section class="section-wrap margin-bottom" id="columns">   
+  <section class="margin-bottom" id="columns">   
     <div class="container p-5">
       <div class="row justify-content-end">
         <?php foreach($columns as $column) { ?>
@@ -20,5 +20,7 @@
         <?php } ?>	
       </div>
     </div>
-  <section>  
+  </section>  
 <?php } ?>
+
+
