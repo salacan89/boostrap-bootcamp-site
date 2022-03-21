@@ -1,0 +1,8 @@
+.btn-blue {
+  @extend .btn-primary;
+  background-color: rgb(29, 61, 243);
+}
+
+.btn-blue:hover {
+  background-color: rgb(80, 104, 243);
+}

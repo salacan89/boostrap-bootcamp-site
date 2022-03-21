@@ -1,6 +1,7 @@
 <?php
 /**
- * Default Single Post Template
+ * Template Name : Default
+ * Template Post Type: post
  *
  */
 

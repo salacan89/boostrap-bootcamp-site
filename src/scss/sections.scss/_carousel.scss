@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-carousel {
+  @extend .bg-secondary;
+  color: white;  
+  height: 100%;
+}
+
+.slick {
+  @extend .slick;
+  display: flex;
+  align-items: end;
+  padding: 80px;
+}
+
+.slick-dots {    
+  right: 0; 
+  li button:before {
+    display: block;
+    width: 10px;
+    color: rgb(201, 200, 199);
+  }  
+  .slick-dots li button:before
+    {
+        font-size: 20px;
+        line-height: 20px;        
+    }
+}
+
+.circle { 
+  width: 140px;
+  height: 140px;  
+  -moz-border-radius: 70px; 
+  -webkit-border-radius: 70px; 
+  border-radius: 70px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 376px;
+  height: 250px;
+}
