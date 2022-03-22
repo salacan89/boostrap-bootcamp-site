@@ -1,0 +1,52 @@
+.hero {
+  min-height: 500px;       
+  background-size: cover;  
+  position: relative;    
+  }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: .7; 
+  position: relative;
+  z-index: 0;  
+}
+
+.heading {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+}
+
+.btn-primary {
+  @extend .btn-primary;
+  width: 150px;
+  height: 50px;
+  border-radius: 70px;
+  background-color: rgb(61, 43, 221);
+  margin: auto;
+  line-height: 1.8;
+  
+}
+
+.btn-primary:hover {
+  background-color: #505cfd;
+}
+
+.btn-transparent {  
+  @extend .btn-outline-light;
+  width: 150px;
+  height: 50px;
+  border-radius: 70px;   
+  line-height: 1.8; 
+}
+
+.btn-transparent:hover {
+  background-color: rgba(255, 255, 255, 0.871);
+  color: #333;
+}

@@ -3,7 +3,8 @@
 // Enqueue Styles
 function h5bs_enqueue_styles()
 {
-  wp_enqueue_style('h5bs-custom', get_template_directory_uri().'./custom.css', false, '1.0.0');
+  wp_enqueue_style('h5bs-custom', get_template_directory_uri().'./custom.css', false, '1.0.0');	
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
   wp_enqueue_style('h5bs-bootstrap-icons', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
   wp_enqueue_style('h5bs-bootstrap-style', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"');
   wp_enqueue_style('h5bs-slick-css', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
