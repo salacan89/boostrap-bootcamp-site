@@ -16,10 +16,9 @@
 		</button>	
     <?php if($badges_type == 'success') { ?>
       <span class="badge rounded-pill bg-success"><?= $title ?></span>
-    <?php } 
-      elseif($badges_type == 'danger') { ?>
+    <?php } elseif($badges_type == 'danger') { ?>
       <span class="badge rounded-pill bg-danger"><?= $title ?></span>
-     <?php } else{ ?>
+    <?php } else{ ?>
       <span class="badge rounded-pill bg-warning"><?= $title ?></span>
     <?php } ?> 
 	</div>

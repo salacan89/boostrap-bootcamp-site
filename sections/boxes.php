@@ -11,8 +11,7 @@
 				<div class="col-md">		
 					<div class="card bg-dark text-light">						
 						<?php if(isset($box['heading'])) { ?>
-							<div class="card-title "><?= $box['heading'] ?>
-							</div>							
+							<div class="card-title "><?= $box['heading'] ?></div>							
 						<?php } ?>	
 						<?php if(isset($box['content'])) { ?>
 							<p class="p-2"><?= $box['content'] ?></p>

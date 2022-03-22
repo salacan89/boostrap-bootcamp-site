@@ -3,7 +3,8 @@
 	 * Default Page Template
 	 *
 	 */
-
+	#NOTE
+	# PERFECT
 	get_header();
 	 
 	$sections = get_field('flexible_content');

@@ -3,7 +3,8 @@
   $hero = set_default('hero', $data);    
 
 ?>
-
+<!-- NOTE -->
+<!-- PERFECT -->
 <section class="section-carousel p-5 margin-bottom" id="slideshow">	    
   <div class="container">
     <div class="slick margin-top">

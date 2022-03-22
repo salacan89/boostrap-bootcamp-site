@@ -32,10 +32,9 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" ><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav  ms-auto">
-        <?php h5bs_primary_nav(); ?>                        
+          <?php h5bs_primary_nav(); ?>                        
         </ul>
       </div>
     </div>              
   </nav>
-  
 </header>
